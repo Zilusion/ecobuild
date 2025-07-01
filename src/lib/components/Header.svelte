@@ -4,8 +4,9 @@
 	import { Home, Wrench, Building2, Users, Mail } from 'lucide-svelte';
 
 	let y = $state(0);
+
 	const navLinks = [
-		{ href: `${base}/`, label: 'Главная', icon: Home },
+		{ href: base || '/', label: 'Главная', icon: Home },
 		{ href: `${base}/services`, label: 'Услуги', icon: Wrench },
 		{ href: `${base}/projects`, label: 'Проекты', icon: Building2 },
 		{ href: `${base}/about`, label: 'О нас', icon: Users },
@@ -22,7 +23,7 @@
 	class:backdrop-blur-sm={y > 50}
 >
 	<nav class="container mx-auto flex items-center justify-between p-4">
-		<a href="/" class="text-2xl font-bold font-display text-brand-green"> EcoBuild </a>
+		<a href={base || '/'} class="text-2xl font-bold font-display text-brand-green"> EcoBuild </a>
 		<ul class="hidden items-center gap-6 md:flex">
 			{#each navLinks as link}
 				<li>
