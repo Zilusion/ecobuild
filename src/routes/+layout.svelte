@@ -4,8 +4,6 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import { fade } from 'svelte/transition';
 
-	export const prerender = true;
-
 	export let data: any;
 </script>
 
