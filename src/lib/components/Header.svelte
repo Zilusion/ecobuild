@@ -1,15 +1,15 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import { base } from '$app/paths';
 	import { Home, Wrench, Building2, Users, Mail } from 'lucide-svelte';
 
-	let y = $state(0); // Позиция скролла
-
+	let y = $state(0);
 	const navLinks = [
-		{ href: '/', label: 'Главная', icon: Home },
-		{ href: '/services', label: 'Услуги', icon: Wrench },
-		{ href: '/projects', label: 'Проекты', icon: Building2 },
-		{ href: '/about', label: 'О нас', icon: Users },
-		{ href: '/contact', label: 'Контакты', icon: Mail }
+		{ href: `${base}/`, label: 'Главная', icon: Home },
+		{ href: `${base}/services`, label: 'Услуги', icon: Wrench },
+		{ href: `${base}/projects`, label: 'Проекты', icon: Building2 },
+		{ href: `${base}/about`, label: 'О нас', icon: Users },
+		{ href: `${base}/contact`, label: 'Контакты', icon: Mail }
 	];
 </script>
 
@@ -37,11 +37,10 @@
 			{/each}
 		</ul>
 		<a
-			href="/contact"
+			href="{base}/contact"
 			class="hidden md:block bg-brand-green text-white px-5 py-2 rounded-full font-semibold transition hover:bg-opacity-90 active:scale-95"
 		>
 			Связаться
 		</a>
-		<!-- Мобильное меню можно добавить позже, для экзамена достаточно десктопа -->
 	</nav>
 </header>

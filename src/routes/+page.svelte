@@ -1,6 +1,7 @@
 <script lang="ts">
 	import ServiceCard from '$lib/components/ServiceCard.svelte';
 	import { Wrench, TreePine, ShieldCheck } from 'lucide-svelte';
+    import { base } from '$app/paths'; 
 </script>
 
 <section class="relative h-[60vh] min-h-[400px] bg-cover bg-center bg-fixed" style="background-image: url('/eco-house.jpg')">
@@ -12,7 +13,7 @@
         <p class="mt-4 max-w-2xl text-lg md:text-xl text-white/80">
             Строим энергоэффективные дома из экологически чистых материалов по современным технологиям.
         </p>
-        <a href="/projects" class="mt-8 bg-brand-green text-white px-8 py-3 rounded-full font-semibold text-lg transition hover:bg-opacity-90 active:scale-95">
+        <a href="{base}/projects" class="mt-8 bg-brand-green text-white px-8 py-3 rounded-full font-semibold text-lg transition hover:bg-opacity-90 active:scale-95">
             Наши проекты
         </a>
     </div>
@@ -44,7 +45,7 @@
     <div class="container mx-auto px-4 py-16 text-center">
         <h2 class="text-3xl font-bold font-display text-dark-text">Готовы построить дом мечты?</h2>
         <p class="mt-2 text-lg text-dark-text/70">Свяжитесь с нами для бесплатной консультации и расчета стоимости.</p>
-        <a href="/contact" class="mt-6 inline-block bg-brand-green text-white px-8 py-3 rounded-full font-semibold text-lg transition hover:bg-opacity-90 active:scale-95">
+        <a href="{base}/contact" class="mt-6 inline-block bg-brand-green text-white px-8 py-3 rounded-full font-semibold text-lg transition hover:bg-opacity-90 active:scale-95">
             Обсудить проект
         </a>
     </div>

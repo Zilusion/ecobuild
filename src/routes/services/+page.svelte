@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Home, ClipboardList, Lightbulb, DraftingCompass } from 'lucide-svelte';
+	import { base } from '$app/paths';
 
 	const services = [
 		{
@@ -67,7 +68,7 @@
 						{service.description}
 					</p>
 					<a
-						href="/contact"
+						href="{base}/contact"
 						class="text-brand-green mt-6 inline-block font-semibold hover:underline"
 					>
 						Узнать больше →
