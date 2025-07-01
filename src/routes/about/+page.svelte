@@ -1,21 +1,22 @@
 <script lang="ts">
 	import { Award, Target, Users } from 'lucide-svelte';
+	import { base } from '$app/paths';
 
 	const team = [
 		{
 			name: 'Алексей Иванов',
 			role: 'Генеральный директор, Основатель',
-			imageUrl: '/about/person1.jpg'
+			imageUrl: `${base}/about/person1.jpg`
 		},
 		{
 			name: 'Елена Петрова',
 			role: 'Главный архитектор',
-			imageUrl: '/about/person2.jpg'
+			imageUrl: `${base}/about/person2.jpg`
 		},
 		{
 			name: 'Дмитрий Сидоров',
 			role: 'Руководитель строительных проектов',
-			imageUrl: '/about/person3.jpg'
+			imageUrl: `${base}/about/person3.jpg`
 		}
 	];
 </script>
@@ -38,7 +39,7 @@
 			</div>
 			<div>
 				<img
-					src="/about/team.jpg"
+					src="{base}/about/team.jpg"
 					alt="Команда EcoBuild за работой"
 					class="rounded-xl shadow-lg"
 				/>

@@ -4,7 +4,7 @@
     import { base } from '$app/paths'; 
 </script>
 
-<section class="relative h-[60vh] min-h-[400px] bg-cover bg-center bg-fixed" style="background-image: url('/eco-house.jpg')">
+<section class="relative h-[60vh] min-h-[400px] bg-cover bg-center bg-fixed" style={`background-image: url('${base}/eco-house.jpg')`}>
     <div class="absolute inset-0 bg-black/50"></div>
     <div class="relative z-10 container mx-auto flex flex-col items-center justify-center h-full text-center text-white">
         <h1 class="text-4xl md:text-6xl font-bold font-display leading-tight">

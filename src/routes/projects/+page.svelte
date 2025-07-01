@@ -1,40 +1,42 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	const projects = [
 		{
 			title: 'Дом "Сканди"',
 			location: 'Подмосковье, КП "Лесной остров"',
 			area: '180 м²',
-			imageUrl: '/projects/project1.jpg'
+			imageUrl: `${base}/projects/project1.jpg`
 		},
 		{
 			title: 'Вилла "Панорама"',
 			location: 'Сочи, Красная Поляна',
 			area: '250 м²',
-			imageUrl: '/projects/project2.webp'
+			imageUrl: `${base}/projects/project2.webp`
 		},
 		{
 			title: 'Коттедж "Лесная симфония"',
 			location: 'Ленинградская обл., пос. Репино',
 			area: '210 м²',
-			imageUrl: '/projects/project3.webp'
+			imageUrl: `${base}/projects/project3.webp`
 		},
 		{
 			title: 'Дом "Минимал"',
 			location: 'Казань, пос. "Зеленый бор"',
 			area: '150 м²',
-			imageUrl: '/projects/project4.webp'
+			imageUrl: `${base}/projects/project4.webp`
 		},
 		{
 			title: 'Шале "Горный воздух"',
-			location: 'Алтайский край',
+			location: 'Алтайский кrai',
 			area: '190 м²',
-			imageUrl: '/projects/project5.webp'
+			imageUrl: `${base}/projects/project5.webp`
 		},
 		{
 			title: 'Дуплекс "Гармония"',
 			location: 'г. Тверь',
 			area: '2x120 м²',
-			imageUrl: '/projects/project6.jpg'
+			imageUrl: `${base}/projects/project6.jpg`
 		}
 	];
 </script>

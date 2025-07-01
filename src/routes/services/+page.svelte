@@ -8,28 +8,28 @@
 			description:
 				'Разработаем уникальный проект вашего будущего дома с учетом всех ваших пожеланий, особенностей участка и современных архитектурных тенденций.',
 			icon: DraftingCompass,
-			imageUrl: '/services/service1.webp'
+			imageUrl: `${base}/services/service1.webp`
 		},
 		{
 			title: 'Строительство "под ключ"',
 			description:
 				'Берем на себя все этапы: от заливки фундамента до финишной отделки. Вы получаете готовый к заселению дом в оговоренные сроки.',
 			icon: Home,
-			imageUrl: '/services/service2.webp'
+			imageUrl: `${base}/services/service2.webp`
 		},
 		{
 			title: 'Внутренняя отделка',
 			description:
 				'Выполняем отделочные работы с использованием экологически чистых материалов. Создаем интерьеры, в которых комфортно жить и дышать.',
 			icon: Lightbulb,
-			imageUrl: '/services/service1.webp'
+			imageUrl: `${base}/services/service1.webp`
 		},
 		{
 			title: 'Ландшафтный дизайн',
 			description:
 				'Организуем пространство вокруг вашего дома: от газона и дорожек до систем автополива и зон отдыха, чтобы создать гармонию с природой.',
 			icon: ClipboardList,
-			imageUrl: '/services/service4.webp'
+			imageUrl: `${base}/services/service4.webp`
 		}
 	];
 </script>
