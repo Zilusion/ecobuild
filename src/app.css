@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	--color-brand-green: #2f5233;
+	--color-brand-beige: #d4a373;
+	--color-dark-text: #212529;
+}
